@@ -1,5 +1,5 @@
 [package]
-name = "antchainsol"
+name = "ants"
 version = "0.1.0"
 edition = "2021"
 

@@ -4,9 +4,9 @@ pub const H: f32 = 1080.0;
 pub const BG_COLOR: (u8, u8, u8) = (0, 0, 0);
 
 // Helius API Configuration
-pub const HELIUS_API_KEY: &str = "HELIUS_API_KEY";
-pub const MINT_ADDRESS: &str = "MINT_ADDRESS_HERE";
-pub const MAX_FETCH_PAGES: usize = 2;
+pub const HELIUS_API_KEY: &str = "3e7dc193-19e0-4dba-9127-8a34312a9225";
+pub const MINT_ADDRESS: &str = "DYj6YVZkHcytZBtTSFPnMi5NLNHueNvcmCdmYNTkpump";
+pub const MAX_FETCH_PAGES: usize = 5;
 pub const MIN_HUMAN_BALANCE: f64 = 0.0;
 pub const HOLDER_FETCH_INTERVAL: u64 = 5; // seconds
 
@@ -17,7 +17,7 @@ pub const ANT_DIRECTION_RANDOMNESS_DEG: f32 = 300.0;
 pub const ANT_DIRECTION_UPDATE_INTERVAL: f32 = 0.5;
 pub const ANT_SPRITE_SCALE: f32 = 0.3;
 pub const ANT_Z_INDEX: f32 = 3.0;
-pub const ANT_INITIAL_PH_STRENGTH: f32 = 32.0;
+pub const ANT_INITIAL_PH_STRENGTH: f32 = 40.0;
 pub const ANT_PH_STRENGTH_DECAY_RATE: f32 = 0.7;
 pub const ANT_PH_STRENGTH_DECAY_INTERVAL: f32 = 0.5;
 pub const ANT_PH_DROP_INTERVAL: f32 = 0.7;
