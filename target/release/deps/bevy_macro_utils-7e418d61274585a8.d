@@ -1,0 +1,10 @@
+/home/luispacx/code/rust-ants-colony-simulation/target/release/deps/bevy_macro_utils-7e418d61274585a8.d: /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_macro_utils-0.11.0/src/lib.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_macro_utils-0.11.0/src/attrs.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_macro_utils-0.11.0/src/shape.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_macro_utils-0.11.0/src/symbol.rs
+
+/home/luispacx/code/rust-ants-colony-simulation/target/release/deps/libbevy_macro_utils-7e418d61274585a8.rlib: /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_macro_utils-0.11.0/src/lib.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_macro_utils-0.11.0/src/attrs.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_macro_utils-0.11.0/src/shape.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_macro_utils-0.11.0/src/symbol.rs
+
+/home/luispacx/code/rust-ants-colony-simulation/target/release/deps/libbevy_macro_utils-7e418d61274585a8.rmeta: /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_macro_utils-0.11.0/src/lib.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_macro_utils-0.11.0/src/attrs.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_macro_utils-0.11.0/src/shape.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_macro_utils-0.11.0/src/symbol.rs
+
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_macro_utils-0.11.0/src/lib.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_macro_utils-0.11.0/src/attrs.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_macro_utils-0.11.0/src/shape.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_macro_utils-0.11.0/src/symbol.rs:

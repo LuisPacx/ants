@@ -1,0 +1,11 @@
+/home/luispacx/code/rust-ants-colony-simulation/target/release/deps/bevy_audio-626beaad8aee0d8b.d: /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_audio-0.11.0/src/lib.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_audio-0.11.0/src/audio.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_audio-0.11.0/src/audio_output.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_audio-0.11.0/src/audio_source.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_audio-0.11.0/src/sinks.rs
+
+/home/luispacx/code/rust-ants-colony-simulation/target/release/deps/libbevy_audio-626beaad8aee0d8b.rlib: /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_audio-0.11.0/src/lib.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_audio-0.11.0/src/audio.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_audio-0.11.0/src/audio_output.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_audio-0.11.0/src/audio_source.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_audio-0.11.0/src/sinks.rs
+
+/home/luispacx/code/rust-ants-colony-simulation/target/release/deps/libbevy_audio-626beaad8aee0d8b.rmeta: /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_audio-0.11.0/src/lib.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_audio-0.11.0/src/audio.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_audio-0.11.0/src/audio_output.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_audio-0.11.0/src/audio_source.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_audio-0.11.0/src/sinks.rs
+
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_audio-0.11.0/src/lib.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_audio-0.11.0/src/audio.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_audio-0.11.0/src/audio_output.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_audio-0.11.0/src/audio_source.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_audio-0.11.0/src/sinks.rs:

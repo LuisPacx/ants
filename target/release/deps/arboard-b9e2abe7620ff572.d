@@ -1,0 +1,11 @@
+/home/luispacx/code/rust-ants-colony-simulation/target/release/deps/arboard-b9e2abe7620ff572.d: /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arboard-3.2.0/src/lib.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arboard-3.2.0/src/common.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arboard-3.2.0/src/platform/mod.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arboard-3.2.0/src/platform/linux/mod.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arboard-3.2.0/src/platform/linux/x11.rs
+
+/home/luispacx/code/rust-ants-colony-simulation/target/release/deps/libarboard-b9e2abe7620ff572.rlib: /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arboard-3.2.0/src/lib.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arboard-3.2.0/src/common.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arboard-3.2.0/src/platform/mod.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arboard-3.2.0/src/platform/linux/mod.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arboard-3.2.0/src/platform/linux/x11.rs
+
+/home/luispacx/code/rust-ants-colony-simulation/target/release/deps/libarboard-b9e2abe7620ff572.rmeta: /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arboard-3.2.0/src/lib.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arboard-3.2.0/src/common.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arboard-3.2.0/src/platform/mod.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arboard-3.2.0/src/platform/linux/mod.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arboard-3.2.0/src/platform/linux/x11.rs
+
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arboard-3.2.0/src/lib.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arboard-3.2.0/src/common.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arboard-3.2.0/src/platform/mod.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arboard-3.2.0/src/platform/linux/mod.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arboard-3.2.0/src/platform/linux/x11.rs:

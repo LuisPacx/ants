@@ -1,0 +1,10 @@
+/home/luispacx/code/rust-ants-colony-simulation/target/release/deps/owned_ttf_parser-4d970a891630c98a.d: /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/owned_ttf_parser-0.19.0/src/lib.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/owned_ttf_parser-0.19.0/src/convert.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/owned_ttf_parser-0.19.0/src/owned.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/owned_ttf_parser-0.19.0/src/preparse.rs
+
+/home/luispacx/code/rust-ants-colony-simulation/target/release/deps/libowned_ttf_parser-4d970a891630c98a.rlib: /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/owned_ttf_parser-0.19.0/src/lib.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/owned_ttf_parser-0.19.0/src/convert.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/owned_ttf_parser-0.19.0/src/owned.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/owned_ttf_parser-0.19.0/src/preparse.rs
+
+/home/luispacx/code/rust-ants-colony-simulation/target/release/deps/libowned_ttf_parser-4d970a891630c98a.rmeta: /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/owned_ttf_parser-0.19.0/src/lib.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/owned_ttf_parser-0.19.0/src/convert.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/owned_ttf_parser-0.19.0/src/owned.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/owned_ttf_parser-0.19.0/src/preparse.rs
+
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/owned_ttf_parser-0.19.0/src/lib.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/owned_ttf_parser-0.19.0/src/convert.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/owned_ttf_parser-0.19.0/src/owned.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/owned_ttf_parser-0.19.0/src/preparse.rs:

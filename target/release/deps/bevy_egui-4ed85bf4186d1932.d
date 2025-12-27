@@ -1,0 +1,11 @@
+/home/luispacx/code/rust-ants-colony-simulation/target/release/deps/bevy_egui-4ed85bf4186d1932.d: /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.21.0/src/lib.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.21.0/src/render_systems.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.21.0/src/systems.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.21.0/src/egui_node.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.21.0/src/egui.wgsl
+
+/home/luispacx/code/rust-ants-colony-simulation/target/release/deps/libbevy_egui-4ed85bf4186d1932.rlib: /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.21.0/src/lib.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.21.0/src/render_systems.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.21.0/src/systems.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.21.0/src/egui_node.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.21.0/src/egui.wgsl
+
+/home/luispacx/code/rust-ants-colony-simulation/target/release/deps/libbevy_egui-4ed85bf4186d1932.rmeta: /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.21.0/src/lib.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.21.0/src/render_systems.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.21.0/src/systems.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.21.0/src/egui_node.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.21.0/src/egui.wgsl
+
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.21.0/src/lib.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.21.0/src/render_systems.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.21.0/src/systems.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.21.0/src/egui_node.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.21.0/src/egui.wgsl:

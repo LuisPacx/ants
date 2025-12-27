@@ -1,0 +1,11 @@
+/home/luispacx/code/rust-ants-colony-simulation/target/release/deps/ecolor-22dff97a7e242bd5.d: /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ecolor-0.22.0/src/lib.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ecolor-0.22.0/src/color32.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ecolor-0.22.0/src/hsva_gamma.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ecolor-0.22.0/src/hsva.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ecolor-0.22.0/src/rgba.rs
+
+/home/luispacx/code/rust-ants-colony-simulation/target/release/deps/libecolor-22dff97a7e242bd5.rlib: /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ecolor-0.22.0/src/lib.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ecolor-0.22.0/src/color32.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ecolor-0.22.0/src/hsva_gamma.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ecolor-0.22.0/src/hsva.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ecolor-0.22.0/src/rgba.rs
+
+/home/luispacx/code/rust-ants-colony-simulation/target/release/deps/libecolor-22dff97a7e242bd5.rmeta: /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ecolor-0.22.0/src/lib.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ecolor-0.22.0/src/color32.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ecolor-0.22.0/src/hsva_gamma.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ecolor-0.22.0/src/hsva.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ecolor-0.22.0/src/rgba.rs
+
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ecolor-0.22.0/src/lib.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ecolor-0.22.0/src/color32.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ecolor-0.22.0/src/hsva_gamma.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ecolor-0.22.0/src/hsva.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ecolor-0.22.0/src/rgba.rs:

@@ -1,0 +1,14 @@
+/home/luispacx/code/rust-ants-colony-simulation/target/release/deps/serde-da5d9d6083727879.d: /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/luispacx/code/rust-ants-colony-simulation/target/release/build/serde-9d08b465ff0b51b1/out/private.rs
+
+/home/luispacx/code/rust-ants-colony-simulation/target/release/deps/libserde-da5d9d6083727879.rlib: /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/luispacx/code/rust-ants-colony-simulation/target/release/build/serde-9d08b465ff0b51b1/out/private.rs
+
+/home/luispacx/code/rust-ants-colony-simulation/target/release/deps/libserde-da5d9d6083727879.rmeta: /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/luispacx/code/rust-ants-colony-simulation/target/release/build/serde-9d08b465ff0b51b1/out/private.rs
+
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/home/luispacx/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/home/luispacx/code/rust-ants-colony-simulation/target/release/build/serde-9d08b465ff0b51b1/out/private.rs:
+
+# env-dep:OUT_DIR=/home/luispacx/code/rust-ants-colony-simulation/target/release/build/serde-9d08b465ff0b51b1/out

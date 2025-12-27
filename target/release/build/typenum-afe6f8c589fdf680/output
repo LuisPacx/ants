@@ -1,0 +1,3 @@
+cargo:rerun-if-changed=build/main.rs
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/home/luispacx/code/rust-ants-colony-simulation/target/release/build/typenum-afe6f8c589fdf680/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/home/luispacx/code/rust-ants-colony-simulation/target/release/build/typenum-afe6f8c589fdf680/out/op.rs
