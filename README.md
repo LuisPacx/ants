@@ -1,3 +1,5 @@
+![screenshot](/assets/logo.jpg)
+
 # Ant Colony Simulation
 This is an ant colony simulation, it internally uses kdtree and query caching, it's able to handle about 5k ants on the cpu.
 
