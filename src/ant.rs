@@ -8,7 +8,9 @@ use bevy::{
     math::{vec2, vec3},
     prelude::*,
     time::common_conditions::on_timer,
+    tasks::{AsyncComputeTaskPool, Task},
 };
+use futures_lite::future;
 use rand::{thread_rng, Rng};
 use serde::Deserialize;
 use serde_json::{json, Value};
@@ -27,6 +29,10 @@ pub enum AntTask {
 pub struct Ant {
     pub wallet_address: String,
 }
+
+#[derive(Component)]
+pub struct AntLabel;
+
 #[derive(Component)]
 pub struct CurrentTask(pub AntTask);
 #[derive(Component)]
@@ -40,6 +46,9 @@ struct PhStrength(f32);
 struct AntScanRadius(f32);
 #[derive(Resource)]
 pub struct AntFollowCameraPos(pub Vec2);
+
+#[derive(Component)]
+struct FetchHoldersTask(Task<Vec<String>>);
 
 #[derive(Deserialize)]
 struct HeliusTokenAccount {
@@ -91,9 +100,11 @@ impl Plugin for AntPlugin {
             )
             .add_systems(
                 Update,
-                update_holders.run_if(on_timer(Duration::from_secs(5))),
+                start_fetch_holders.run_if(on_timer(Duration::from_secs(HOLDER_FETCH_INTERVAL))),
             )
-            .add_systems(Update, update_position.after(check_wall_collision));
+            .add_systems(Update, handle_fetch_holders_result)
+            .add_systems(Update, update_position.after(check_wall_collision))
+            .add_systems(Update, update_ant_labels);
     }
 }
 
@@ -181,61 +192,112 @@ fn fetch_token_holders() -> Vec<String> {
             break;
         }
     }
-    all_owners.into_iter().collect()
+    
+    let holders: Vec<String> = all_owners.into_iter().collect();
+    println!("Fetched {} token holders", holders.len());
+    holders
 }
 
 fn setup(mut commands: Commands, asset_server: Res<AssetServer>) {
+    println!("Starting initial holder fetch...");
     let owners = fetch_token_holders();
+    println!("Creating {} initial ants", owners.len());
+    
     for owner in owners {
-        commands.spawn((
-            SpriteBundle {
-                texture: asset_server.load(SPRITE_ANT),
-                sprite: Sprite {
-                    color: Color::rgb(1.1, 1.1, 1.0),
-                    ..default()
-                },
-                transform: Transform::from_xyz(HOME_LOCATION.0, HOME_LOCATION.1, ANT_Z_INDEX)
-                    .with_scale(Vec3::splat(ANT_SPRITE_SCALE)),
-                ..Default::default()
-            },
-            Ant { wallet_address: owner },
-            CurrentTask(AntTask::FindFood),
-            Velocity(get_rand_unit_vec2()),
-            Acceleration(Vec2::ZERO),
-            PhStrength(ANT_INITIAL_PH_STRENGTH),
-        ));
+        spawn_ant(&mut commands, &asset_server, owner);
     }
 }
 
-fn update_holders(
-    mut commands: Commands,
-    asset_server: Res<AssetServer>,
-    ant_query: Query<&Ant>,
-) {
-    let new_owners = fetch_token_holders();
-    let mut current: HashSet<String> = HashSet::new();
-    for ant in ant_query.iter() {
-        current.insert(ant.wallet_address.clone());
-    }
-    for owner in new_owners {
-        if !current.contains(&owner) {
-            commands.spawn((
-                SpriteBundle {
-                    texture: asset_server.load(SPRITE_ANT),
-                    sprite: Sprite {
-                        color: Color::rgb(1.1, 1.1, 1.0),
+fn spawn_ant(commands: &mut Commands, asset_server: &Res<AssetServer>, owner: String) {
+    let truncated_address = format!("{}...{}", &owner[..4], &owner[owner.len()-4..]);
+    
+    commands.spawn((
+        SpriteBundle {
+            texture: asset_server.load(SPRITE_ANT),
+            sprite: Sprite {
+                color: Color::rgb(1.1, 1.1, 1.0),
+                ..default()
+            },
+            transform: Transform::from_xyz(HOME_LOCATION.0, HOME_LOCATION.1, ANT_Z_INDEX)
+                .with_scale(Vec3::splat(ANT_SPRITE_SCALE)),
+            ..Default::default()
+        },
+        Ant { wallet_address: owner },
+        CurrentTask(AntTask::FindFood),
+        Velocity(get_rand_unit_vec2()),
+        Acceleration(Vec2::ZERO),
+        PhStrength(ANT_INITIAL_PH_STRENGTH),
+    )).with_children(|parent| {
+        parent.spawn((
+            Text2dBundle {
+                text: Text::from_section(
+                    truncated_address,
+                    TextStyle {
+                        font_size: 20.0,
+                        color: Color::rgb(1.0, 1.0, 1.0),
                         ..default()
                     },
-                    transform: Transform::from_xyz(HOME_LOCATION.0, HOME_LOCATION.1, ANT_Z_INDEX)
-                        .with_scale(Vec3::splat(ANT_SPRITE_SCALE)),
-                    ..Default::default()
-                },
-                Ant { wallet_address: owner },
-                CurrentTask(AntTask::FindFood),
-                Velocity(get_rand_unit_vec2()),
-                Acceleration(Vec2::ZERO),
-                PhStrength(ANT_INITIAL_PH_STRENGTH),
-            ));
+                ),
+                transform: Transform::from_xyz(0.0, 15.0, 1.0),
+                ..default()
+            },
+            AntLabel,
+        ));
+    });
+}
+
+fn start_fetch_holders(mut commands: Commands) {
+    let thread_pool = AsyncComputeTaskPool::get();
+    let task = thread_pool.spawn(async move {
+        fetch_token_holders()
+    });
+    
+    commands.spawn(FetchHoldersTask(task));
+}
+
+fn handle_fetch_holders_result(
+    mut commands: Commands,
+    asset_server: Res<AssetServer>,
+    mut tasks: Query<(Entity, &mut FetchHoldersTask)>,
+    ant_query: Query<&Ant>,
+) {
+    for (entity, mut task) in tasks.iter_mut() {
+        if let Some(new_owners) = future::block_on(future::poll_once(&mut task.0)) {
+            // Remove the task entity
+            commands.entity(entity).despawn();
+            
+            // Get current holders
+            let mut current: HashSet<String> = HashSet::new();
+            for ant in ant_query.iter() {
+                current.insert(ant.wallet_address.clone());
+            }
+            
+            // Count new holders
+            let mut new_count = 0;
+            
+            // Spawn ants for new holders
+            for owner in new_owners {
+                if !current.contains(&owner) {
+                    spawn_ant(&mut commands, &asset_server, owner);
+                    new_count += 1;
+                }
+            }
+            
+            if new_count > 0 {
+                println!("Added {} new ants (holders)", new_count);
+            }
+        }
+    }
+}
+
+fn update_ant_labels(
+    ant_query: Query<&Transform, With<Ant>>,
+    mut label_query: Query<(&mut Transform, &Parent), (With<AntLabel>, Without<Ant>)>,
+) {
+    for (mut label_transform, parent) in label_query.iter_mut() {
+        if let Ok(ant_transform) = ant_query.get(parent.get()) {
+            // Keep label upright regardless of ant rotation
+            label_transform.rotation = Quat::from_rotation_z(-ant_transform.rotation.to_euler(EulerRot::XYZ).2);
         }
     }
 }
